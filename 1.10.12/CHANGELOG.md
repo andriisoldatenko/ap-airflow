@@ -18,11 +18,18 @@ Astronomer Certified 1.10.12-2, 2020-12-01
 - Install cattr on Python 3.7 ([commit](https://github.com/astronomer/airflow/commit/1173785c3))
 - Pin `kubernetes` to a max version of 11.0.0 ([commit](https://github.com/astronomer/airflow/commit/2d070bdab))
 - Allow overrides for pod_template_file ([commit](https://github.com/astronomer/airflow/commit/76b17f23b))
+- Pin pyzmq<20.0 for Alpine images ([commit](https://github.com/astronomer/ap-airflow/commit/3059797))
+- Dockerfile: Add `sync_perm` command to buster images ([commit](https://github.com/astronomer/ap-airflow/commit/5a28d3f))
+- BugFix: Tasks with depends_on_past or task_concurrency are stuck ([commit](https://github.com/astronomer/airflow/commit/c561f2aef))
+- Fix issue with empty Resources in executor_config ([commit](https://github.com/astronomer/airflow/commit/0e22a5fbf))
 
 ### Improvements
 
 - [AIRFLOW-3607] Only query DB once per DAG run for TriggerRuleDep ([commit](https://github.com/astronomer/airflow/commit/e1659b2d1))
 - [AIRFLOW-3607] Optimize dep checking when depends on past set and concurrency limit ([commit](https://github.com/astronomer/airflow/commit/8673e0147))
+- Dockerfile: Stop running `sync_perm` multiple times for Airflow >= 1.10.7 ([commit](https://github.com/astronomer/ap-airflow/commit/9c10dcf))
+- Dockerfile: Bump astronomer_airflow_scripts to 0.0.5 ([commit](https://github.com/astronomer/ap-airflow/commit/42b4169))
+- Dockerfile: Use Airflow Constraints file for AC 1.10.12 and 1.10.13 ([commit](https://github.com/astronomer/ap-airflow/commit/e968f12))
 
 Astronomer Certified 1.10.12-1, 2020-09-29
 -----------------------------------------------
