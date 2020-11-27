@@ -17,7 +17,6 @@ Astronomer Certified 1.10.12-2, 2020-12-01
 - Bump attrs and cattrs dependencies ([commit](https://github.com/astronomer/airflow/commit/aede56833))
 - Install cattr on Python 3.7 ([commit](https://github.com/astronomer/airflow/commit/1173785c3))
 - Pin `kubernetes` to a max version of 11.0.0 ([commit](https://github.com/astronomer/airflow/commit/2d070bdab))
-- Allow overrides for pod_template_file ([commit](https://github.com/astronomer/airflow/commit/76b17f23b))
 - Pin pyzmq<20.0 for Alpine images ([commit](https://github.com/astronomer/ap-airflow/commit/3059797))
 - Dockerfile: Add `sync_perm` command to buster images ([commit](https://github.com/astronomer/ap-airflow/commit/5a28d3f))
 - BugFix: Tasks with depends_on_past or task_concurrency are stuck ([commit](https://github.com/astronomer/airflow/commit/c561f2aef))
